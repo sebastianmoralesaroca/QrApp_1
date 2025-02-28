@@ -1,11 +1,19 @@
 import { useState } from 'react'
-import Header from './components/header'
+/* Componets */
+import Header from './components/header/header';
+import Nav from './components/nav/nav';
+
+/* Pages */
+import Home from './pages/home/home';
+import Item from './pages/item/item';
 
 
 function App() {
   return (
     <>
       <Header />
+      <Item />
+      <Nav />
     </>
   )
 }

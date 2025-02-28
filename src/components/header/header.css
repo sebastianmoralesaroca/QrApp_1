@@ -1,0 +1,15 @@
+.cont_header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background-color: blueviolet;
+}
+.cont_header .imgBack {
+  width: 70px;
+  height: 70px;
+}
+.cont_header .img_logo {
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=header.css.map */
