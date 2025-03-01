@@ -1,20 +1,32 @@
 import { useState } from 'react'
+/* Productos de Item 3 */
 
-/* ASSETS ITEM 3 */
-const item3_title = "Refresco" ;
-const item3_text = "9 Opciones" ;
-import item3_img from '../../public/img_app/drink_img.png' ;
 
-/* Product 1 */
-const item1_prod1_titl = "Bacon Chesse Burger" ;
-const item1_prod1_text = "Chesse Burger" ;
-const item1_prod1_pric = "$" + 12.000 ;
-const item1_prod1_desc = "Una hamburguesa jugosa y perfectamente asada, con queso derretido, lechuga crujiente, tomate fresco, cebolla caramelizada y una salsa especial, todo en un pan suave y ligeramente tostado. ¡Deliciosa!" ;
-import item1_prod1_img from '../../public/img_app/burger_img.png' ;
+const Refrescos = [
+    {
+        id: 301,
+        name: "Coca Cola",
+        subname: "Bebida Lata",
+        price: 4.000,
+        img: '../../public/img_app/drink_img.png',
+        description: "Refrescante y burbujeante, con su inconfundible sabor dulce y toque de caramelo, ideal para cualquier ocasión."
+    },
+    {
+        id: 302,
+        name: "Pepsi",
+        subname: "Bebida Lata",
+        price: 2.000,
+        img: '../../public/img_app/drink_img.png',
+        description: "Refrescante y burbujeante, con su inconfundible sabor dulce y toque de caramelo, ideal para cualquier ocasión."
+    },
+]
 
-/* Product 2 */
-const item1_prod2_titl = "Chicken Buerger" ;
-const item1_prod2_text = "Ambuerguesa de Pollo" ;
-const item1_prod2_pric = "$" + 9.000 ;
-const item1_prod2_desc = "Una hamburguesa de pollo, con su pechuga dorada y crujiente, cubierta con queso cheddar derretido, acompañada de lechuga fresca, rodajas de tomate jugoso y una cremosa mayonesa. Todo esto servido en un pan suave y ligeramente tostado, haciendo de cada bocado una experiencia deliciosa y reconfortante." ;
-import item1_prod2_img from '../../public/img_app/burger_img.png' ;
+const CategorieID = (id) => Refrescos.find(Refresco => Refresco.id === id);
+const Refresco1 = CategorieID(301) ;
+const Refresco2 = CategorieID(302) ;
+
+
+export {
+    Refresco1,
+    Refresco2
+}

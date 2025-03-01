@@ -1,13 +1,13 @@
 import { useState } from 'react'
 
-function Card_item ({ link, title, text, img }) {
+function Card_item ({ link, name, subname, img }) {
     return (
     <>
         <a href={ link } >
             <div className='card_item'>
                 <div className='item_cont1'>
-                    <h3 className='card_item_title'>{ title }</h3>
-                    <p className='card_item_text'>{ text }</p>
+                    <h3 className='card_item_title'>{ name }</h3>
+                    <p className='card_item_text'>{ subname }</p>
                 </div>
                 <div className='item_cont2'>
                     <img className='cont2_img' src={img} />
