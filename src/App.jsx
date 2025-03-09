@@ -5,15 +5,18 @@ import Nav from './components/nav/nav';
 
 /* Pages */
 import Home from './pages/home/home';
-import Item from './pages/item/item';
-import Product from './pages/product/product';
+import Category from './pages/category/category';
+import Category1 from './pages/category4/category1';
+import Category2 from './pages/category4/category2';
+import Category3 from './pages/category4/category3';
+import Category4 from './pages/category4/category4';
 
 
 function App() {
   return (
     <>
       <Header />
-      <Item />
+      <Category3 />
       <Nav />
     </>
   )

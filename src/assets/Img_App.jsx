@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
 /* Logo & Background */
-import Img_Logo from '../../public/img_app/logo_img.jpeg';
-import Img_fondo from '../../public/img_app/fondo_img.jpeg';
+import Img_Logo from '../../public/img_app/logo.jpeg';
+import Img_fondo from '../../public/img_app/fondoBackground.jpeg';
 
 
 export {

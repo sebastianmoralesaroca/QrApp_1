@@ -2,31 +2,31 @@ import { useState } from 'react'
 /* Productos de Item 3 */
 
 
-const Refrescos = [
+const Products = [
     {
         id: 301,
         name: "Coca Cola",
         subname: "Bebida Lata",
         price: 4.000,
-        img: '../../public/img_app/drink_img.png',
+        img: '../../public/img_app/coca.png',
         description: "Refrescante y burbujeante, con su inconfundible sabor dulce y toque de caramelo, ideal para cualquier ocasión."
     },
     {
         id: 302,
-        name: "Pepsi",
+        name: "Fanta",
         subname: "Bebida Lata",
         price: 2.000,
-        img: '../../public/img_app/drink_img.png',
+        img: '../../public/img_app/fanta.png',
         description: "Refrescante y burbujeante, con su inconfundible sabor dulce y toque de caramelo, ideal para cualquier ocasión."
     },
 ]
 
-const CategorieID = (id) => Refrescos.find(Refresco => Refresco.id === id);
-const Refresco1 = CategorieID(301) ;
-const Refresco2 = CategorieID(302) ;
+const ProductsID = (id) => Products.find(Product => Product.id === id);
+const Prod301 = ProductsID(301) ;
+const Prod302 = ProductsID(302) ;
 
 
 export {
-    Refresco1,
-    Refresco2
+    Prod301,
+    Prod302
 }
