@@ -10,13 +10,14 @@ import Category1 from './pages/category4/category1';
 import Category2 from './pages/category4/category2';
 import Category3 from './pages/category4/category3';
 import Category4 from './pages/category4/category4';
+import Description from './pages/description/description';
 
 
 function App() {
   return (
     <>
       <Header />
-      <Category3 />
+      <Category1 />
       <Nav />
     </>
   )
