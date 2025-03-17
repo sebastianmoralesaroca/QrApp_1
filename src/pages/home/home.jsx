@@ -1,6 +1,6 @@
 import React from "react"
 import { Img_Logo } from '../../assets/Img_App'
-import { Icon_Document } from '../../assets/Icon_Interface'
+import {icon_document} from '../../assets/Icon_Interface'
 
 
 function Home () {
@@ -11,7 +11,7 @@ function Home () {
                 <img className='cont1_img' src={ Img_Logo } />
             </div>
             <div className='home_cont2'>
-                <button className='cont2_btn'><img className='cont2_img' src={ Icon_Document } /></button>
+                <button className='cont2_btn'><img className='cont2_img' src={icon_document} /></button>
                 <h1>Bienvenido a Super Burger</h1>
             </div>
         </main>

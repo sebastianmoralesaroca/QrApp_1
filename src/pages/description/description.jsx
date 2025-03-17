@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { Icon_Add } from '../../assets/Icon_Interface'
+import {icon_add} from '../../assets/Icon_Interface'
 
 
-function Description ({title,img,price,text}) {
+function Description ({title,img,price,desc}) {
     return (
     <>
         <main className='desc'>
@@ -13,10 +13,10 @@ function Description ({title,img,price,text}) {
             <div className='descCont2'>
                 <div className='descCont3'>
                     <h2 className='descCont3_price'>{price}</h2>
-                    <button className='descCont3_btn'><img className='descCont3_btnImg' src={Icon_Add} /></button>
+                    <button className='descCont3_btn'><img className='descCont3_btnImg' src={icon_add} /></button>
                 </div>
-                <div className='descCont3'>
-                    <p className='descCont3_text'>{text}</p>
+                <div className='descCont4'>
+                    <p className='descCont4_text'>{desc}</p>
                 </div>
             </div>
         </main>

@@ -1,8 +1,7 @@
 import React from "react";
-import {Icon_Add} from '../../assets/Icon_Interface';
 
 
-function ProductCard ({ link, img, name, subname, price }) {
+function ProductCard ({link,img,name,subname,price}) {
     return (
     <>
         <a href="https://www.bing.com/?setlang=es" >

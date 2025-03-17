@@ -2,6 +2,7 @@ import { useState } from 'react'
 /* Componets */
 import Header from './components/header/header';
 import Nav from './components/nav/nav';
+import Menu from './components/menu/menu';
 
 /* Pages */
 import Home from './pages/home/home';
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
       <Header />
-      <Category1 />
+      
       <Nav />
     </>
   )
