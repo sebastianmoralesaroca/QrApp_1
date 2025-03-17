@@ -1,10 +1,13 @@
 
 // Components
-@import './components/header/header.scss' ;
-@import './components/nav/nav.scss' ;
-@import './components/categoryCard/categoryCard.scss' ;
-@import './components/productCard/productCard.scss' ;
+@import './components/comp_header/comp_header.scss' ;
+@import './components/comp_nav//comp_nav.scss' ;
+@import './components/comp_cateCard/comp_cateCard.scss' ;
+@import './components/comp_prodCard/comp_prodCard.scss' ;
+@import './components/comp_menu/comp_menu.scss' ;
+@import './components/comp_noti/comp_noti.scss' ;
 
 // Pages
-@import './pages/home/home.scss' ;
-@import './pages/category/category.scss' ;
+@import './pages/pg_home/pg_home.scss' ;
+@import './pages/pg_category/pg_category.scss' ;
+@import './pages/pg_category4/pg_product.scss' ;

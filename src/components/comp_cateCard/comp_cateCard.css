@@ -1,0 +1,7 @@
+.card_item {
+  background-image: url("../../../public/img_app/fondo_img.jpeg");
+}
+.card_item .item_cont2 .cont2_img {
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=comp_cateCard.css.map */

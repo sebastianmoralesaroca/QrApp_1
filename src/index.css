@@ -42,6 +42,18 @@
   width: 50px;
   height: 50px;
 }
+.menuCard .menuCard_img {
+  width: 30px;
+  height: 30px;
+}
+.menuContPrin .menuCont1 .menuCont1_btn .menuCont1_img {
+  width: 30px;
+  height: 30px;
+}
+.noti_contPrin .noti_cont1 .noti_cont1Btn .noti_cont1Img {
+  width: 50px;
+  height: 50px;
+}
 .main_home .home_cont1 .cont1_img {
   width: 100px;
   height: 100px;
