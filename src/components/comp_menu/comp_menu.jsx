@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import {icon_darkmode,} from '../../assets/Icon_Interface'
+import {icon_darkmode,} from '../../assets/icon_interface'
 
 
-function menuCard(img,name) {
+function MenuCard(img,name) {
      return (
         <>
           <div className='menuCard'>
@@ -13,7 +13,7 @@ function menuCard(img,name) {
      )
 }
 
-function Menu() {
+function Comp_Menu() {
   return (
     <>
       <div className='menuContPrin'>
@@ -29,4 +29,4 @@ function Menu() {
   )
 }
 
-export default Menu
+export default Comp_Menu

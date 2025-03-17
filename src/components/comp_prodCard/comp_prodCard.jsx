@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function ProductCard ({link,img,name,subname,price}) {
+function Comp_ProdCard ({link,img,name,subname,price}) {
     return (
     <>
         <a href="https://www.bing.com/?setlang=es" >
@@ -20,4 +20,4 @@ function ProductCard ({link,img,name,subname,price}) {
     )
 }
 
-export default ProductCard
+export default Comp_ProdCard

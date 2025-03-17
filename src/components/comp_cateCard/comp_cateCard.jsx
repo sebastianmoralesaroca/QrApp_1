@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function CategoryCard ({ link, name, subname, img }) {
+function Comp_CateCard ({link,name,subname,img}) {
     return (
     <>
         <a href={ link } >
@@ -18,4 +18,4 @@ function CategoryCard ({ link, name, subname, img }) {
     )
 }
 
-export default CategoryCard
+export default Comp_CateCard

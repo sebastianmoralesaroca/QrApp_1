@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import {icon_notification,icon_menu,icon_shop} from '../../assets/Icon_Interface'
+import {icon_notification,icon_menu,icon_shop} from '../../assets/icon_interface'
 
-function Nav () {
+function Comp_Nav () {
     return (
     <>
         <nav className='cont_nav'>
@@ -13,4 +13,4 @@ function Nav () {
     )
 }
 
-export default Nav
+export default Comp_Nav

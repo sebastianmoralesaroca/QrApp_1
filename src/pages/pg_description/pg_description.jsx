@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import {icon_add} from '../../assets/Icon_Interface'
+import {icon_add} from '../../assets/icon_interface'
 
 
-function Description ({title,img,price,desc}) {
+function Pg_Description ({title,img,price,desc}) {
     return (
     <>
         <main className='desc'>
@@ -24,4 +24,4 @@ function Description ({title,img,price,desc}) {
     )
 }
 
-export default Description ;
+export default Pg_Description ;

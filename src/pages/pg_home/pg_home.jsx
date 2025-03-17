@@ -1,6 +1,6 @@
 import React from "react"
-import { Img_Logo } from '../../assets/Img_App'
-import {icon_document} from '../../assets/Icon_Interface'
+import { Img_Logo } from '../../assets/img_app'
+import {icon_document} from '../../assets/icon_interface'
 
 
 function Home () {

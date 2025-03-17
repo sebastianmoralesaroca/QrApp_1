@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import ProductCard from '../productCard/productCard'
-import {Icon_Cancel} from '../../assets/Icon_Interface'
+import Comp_ProdCard from '../comp_prodCard/comp_prodCard'
+import {Icon_Cancel} from '../../assets/icon_interface'
 import {Prod101} from '../../assets/ass_category1' /* Enlace de prueba */
 
 
-function shoppCart(subtotal, propina, total) {
+function Comp_ShoppCart(subtotal, propina, total) {
     return (
       <>
         <div className='shoppCart'>
@@ -27,4 +27,4 @@ function shoppCart(subtotal, propina, total) {
     )
   }
 
-export default shoppCart
+export default Comp_ShoppCart

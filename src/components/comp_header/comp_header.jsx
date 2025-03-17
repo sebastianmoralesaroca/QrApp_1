@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { icon_back, } from '../../assets/Icon_Interface'
-import { Img_Logo, } from '../../assets/Img_App'
+import {icon_back} from '../../assets/icon_interface'
+import { Img_Logo, } from '../../assets/img_app'
 
-function Header() {
+function Comp_Header() {
     return (
     <>
         <header className='cont_header'>
@@ -13,4 +13,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Comp_Header

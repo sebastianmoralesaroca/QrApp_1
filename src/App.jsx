@@ -1,25 +1,24 @@
 import { useState } from 'react'
 /* Componets */
-import Header from './components/header/header';
-import Nav from './components/nav/nav';
-import Menu from './components/menu/menu';
+import Comp_Header from './components/comp_header/comp_header';
+import Comp_Nav from './components/comp_nav/comp_nav';
+import Comp_Menu from './components/comp_menu/comp_menu';
 
 /* Pages */
-import Home from './pages/home/home';
-import Category from './pages/category/category';
-import Category1 from './pages/category4/category1';
-import Category2 from './pages/category4/category2';
-import Category3 from './pages/category4/category3';
-import Category4 from './pages/category4/category4';
-import Description from './pages/description/description';
+import Pg_Home from './pages/pg_home/pg_home';
+import Pg_Category from './pages/pg_category/pg_category';
+import Pg_Category1 from './pages/pg_category4/pg_category1';
+import Pg_Category2 from './pages/pg_category4/pg_category2';
+import Pg_Category3 from './pages/pg_category4/pg_category3';
+import Pg_Category4 from './pages/pg_category4/pg_category4';
+import Pg_Description from './pages/pg_description/pg_description';
 
 
 function App() {
   return (
     <>
-      <Header />
-      
-      <Nav />
+      <Comp_Header />
+      <Comp_Nav />
     </>
   )
 }
