@@ -13,7 +13,7 @@ import Pg_Category2 from './pages/pg_category4/pg_category2';
 import Pg_Category3 from './pages/pg_category4/pg_category3';
 import Pg_Category4 from './pages/pg_category4/pg_category4';
 import Pg_Description from './pages/pg_description/pg_description';
-
+import { Router } from 'react-router-dom';
 
 function App() {
   return (
@@ -25,4 +25,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
