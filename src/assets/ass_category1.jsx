@@ -15,7 +15,7 @@ const Products = [
         name: "Burger Chicken",
         subname: "Burger + Papas",
         price: 9.000,
-        img: '../../public/img_app/burger2_img.png',
+        img: '../../public/img_app/burger2.png',
         description: "Una hamburguesa de pollo, con su pechuga dorada y crujiente, cubierta con queso cheddar derretido, acompañada de lechuga fresca, rodajas de tomate jugoso y una cremosa mayonesa. Todo esto servido en un pan suave y ligeramente tostado, haciendo de cada bocado una experiencia deliciosa y reconfortante."
     },
 ]

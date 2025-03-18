@@ -13,10 +13,10 @@ function Pg_Description ({title,img,price,desc}) {
             <div className='descCont2'>
                 <div className='descCont3'>
                     <h2 className='descCont3_price'>{price}</h2>
-                    <button className='descCont3_btn'><img className='descCont3_btnImg' src={icon_add} /></button>
+                    <p className='descCont4_text'>{desc}</p>
                 </div>
                 <div className='descCont4'>
-                    <p className='descCont4_text'>{desc}</p>
+                    <button className='descCont3_btn'>Agregar Producto</button>
                 </div>
             </div>
         </main>
