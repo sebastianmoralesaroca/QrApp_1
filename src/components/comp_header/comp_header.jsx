@@ -1,38 +1,59 @@
-import { useNavigate, useLocation } from 'react-router-dom'; // Importamos useNavigate y useLocation
-import { useState } from 'react'; // Usamos useState para gestionar el estado de la navegación
-import { icon_back } from '../../assets/icon_interface'; // Importamos el icono para el botón de retroceso
+import { useNavigate, useLocation } from 'react-router-dom';
+import { icon_back } from '../../assets/icon_interface';
 import { Img_Logo } from '../../assets/img_app';
 
 function Comp_Header() {
-  const navigate = useNavigate(); // Instancia de navegación
-  const location = useLocation(); // Hook para obtener la ubicación actual
-  const [prevLocation, setPrevLocation] = useState(''); // Estado para almacenar la ubicación anterior
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  // Función para manejar el retroceso de las páginas
+  // Desactivar boton al estar en Category
+  const disableBackButton = location.pathname === '/category';
+
   const handleBack = () => {
-    // Si estamos en la página de inicio (home) no hacemos nada.
-    if (location.pathname === '/') {
-      return; // No se realiza ninguna acción
+    if (location.pathname === '/' || disableBackButton) {
+      return;
     }
-
-    // Lógica para retroceder según la ruta actual
-    if (prevLocation === '') {
-      // Si no tenemos una ubicación previa, entonces guardamos la actual (para el primer click)
-      setPrevLocation(location.pathname);
-      navigate('/category'); // Regresamos a la página de categorías
-    } else if (prevLocation === '/category') {
-      // Si la ubicación anterior era 'category', regresamos a la página principal
-      setPrevLocation(''); // Restablecemos el estado de prevLocation
-      navigate('/'); // Regresamos a la página de inicio
-    } else {
-      // En cualquier otro caso, retrocedemos un paso en el historial
-      navigate(-1);
+    if (location.pathname === '/category1/descripcion') {
+      navigate('/category1');
+      return;
     }
+    if (location.pathname === '/category2/descripcion') {
+      navigate('/category2');
+      return;
+    }
+    if (location.pathname === '/category3/descripcion') {
+      navigate('/category3');
+      return;
+    }
+    if (location.pathname === '/category4/descripcion') {
+      navigate('/category4');
+      return;
+    }
+    if (
+      location.pathname === '/category1' ||
+      location.pathname === '/category2' ||
+      location.pathname === '/category3' ||
+      location.pathname === '/category4'
+    ) {
+      navigate('/category');
+      return;
+    }
+    if (location.state && location.state.from) {
+      navigate(location.state.from);
+      return;
+    }
+    // Finalmente, si ninguna condición se cumple, retrocede un paso en el historial.
+    navigate(-1);
   };
 
   return (
     <header className="cont_header">
-      <button className="btn_back" onClick={handleBack}>
+      <button
+        className="btn_back"
+        onClick={handleBack}
+        disabled={disableBackButton}
+        style={disableBackButton ? { opacity: 0.5, cursor: 'default' } : {}}
+      >
         <img className="imgBack" src={icon_back} alt="retroceder" />
       </button>
       <img className="img_logo" src={Img_Logo} alt="imagenlogo" />
