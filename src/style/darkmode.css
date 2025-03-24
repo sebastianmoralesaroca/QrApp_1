@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* 🔹 Se agregaron estilos para el modo oscuro */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}/*# sourceMappingURL=darkmode.css.map */

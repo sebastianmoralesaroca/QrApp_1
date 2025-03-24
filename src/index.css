@@ -1,3 +1,19 @@
+@charset "UTF-8";
+/* 🔹 Se agregaron estilos para el modo oscuro */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
 .cont_header {
   display: flex;
   justify-content: space-between;
@@ -42,18 +58,136 @@
   width: 50px;
   height: 50px;
 }
-.menuCard .menuCard_img {
-  width: 30px;
-  height: 30px;
+/* Contenedor principal del menú */
+.menuContPrin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* Estilos para la parte superior del menú (con el botón de cerrar y título) */
+  /* Contenedor de los botones */
+  /* Estilo de cada botón dentro del menú */
 }
-.menuContPrin .menuCont1 .menuCont1_btn .menuCont1_img {
-  width: 30px;
-  height: 30px;
+.menuContPrin .menuCont1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
-.noti_contPrin .noti_cont1 .noti_cont1Btn .noti_cont1Img {
-  width: 50px;
-  height: 50px;
+.menuContPrin .menuCont1 .menuCont1_btn {
+  background: none;
+  border: none;
 }
+.menuContPrin .menuCont1 .menuCont1_img {
+  width: 24px; /* Ajusta el tamaño de la imagen */
+  height: 24px;
+}
+.menuContPrin .menuCont1 .menuCont1_title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.menuContPrin .menuCont2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.menuContPrin .menuCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Fondo del botón */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0; /* Separación entre los botones */
+  cursor: pointer;
+  width: 150px; /* Ancho del botón */
+}
+.menuContPrin .menuCard:hover {
+  background-color: #e0e0e0; /* Efecto hover */
+}
+.menuContPrin .menuCard .menuCard_img {
+  width: 24px; /* Tamaño de las imágenes */
+  height: 24px;
+  margin-bottom: 5px; /* Separación entre la imagen y el texto */
+}
+.menuContPrin .menuCard .menuCard_text {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #333;
+}
+
+.NotiCard_cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.NotiCard_contTitle {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.NotiCard_contText {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.noti_contPrin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #222;
+}
+
+.noti_cont1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.noti_cont1Btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.noti_cont1Img {
+  width: 20px;
+  height: 20px;
+}
+
+.noti_cont1Title {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.noti_cont2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .main_home .home_cont1 .cont1_img {
   width: 100px;
   height: 100px;

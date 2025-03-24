@@ -1,16 +1,71 @@
+// Para la tarjeta de notificación (Comp_NotiCard)
 .NotiCard_cont {
-    .NotiCard_contTitle {}
-    .NotiCard_contText {}
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center; // Alinea el texto en el centro
+  
+    // Asegúrate de que el fondo tenga un color semi-transparente si lo necesitas
+    background-color: rgba(0, 0, 0, 0.5); // Fondo oscuro y semi-transparente (opcional)
+  }
+  
+  .NotiCard_contTitle {
+    color: white; // Título en color blanco
+    font-size: 1.5rem; // Tamaño del texto (ajustable)
+    margin-bottom: 10px;
+  }
+  
+  .NotiCard_contText {
+    color: white; // Texto en color blanco
+    font-size: 1rem; // Tamaño del texto (ajustable)
+    line-height: 1.5;
+  }
 
-.noti_contPrin{
-    .noti_cont1{
-        .noti_cont1Btn{
-            .noti_cont1Img {
-                width: 50px;
-                height: 50px;
-            }
-        }
-    }
-    .noti_cont2{}
-}
+  
+  // Para el contenedor de notificaciones (Comp_Noti)
+  .noti_contPrin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; // Ocupa toda la altura de la pantalla
+    padding: 20px;
+    background-color: #222; // Fondo oscuro general, si es necesario
+  }
+  
+  .noti_cont1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .noti_cont1Btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .noti_cont1Img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .noti_cont1Title {
+    color: white; // Título en color blanco
+    font-size: 2rem; // Tamaño del texto (ajustable)
+    font-weight: bold;
+  }
+  
+  .noti_cont2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  

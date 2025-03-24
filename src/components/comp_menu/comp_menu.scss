@@ -1,20 +1,73 @@
-.menuCard {
-    .menuCard_img {
-        width: 30px;
-        height: 30px;
-    }
-    .menuCard_text {}
-}
-
+/* Contenedor principal del menú */
 .menuContPrin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  
+    /* Estilos para la parte superior del menú (con el botón de cerrar y título) */
     .menuCont1 {
-        .menuCont1_btn {
-            .menuCont1_img {
-                width: 30px;
-                height: 30px;
-            }
-        }
-        .menuCont1_title {}
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 20px;
+  
+      .menuCont1_btn {
+        background: none;
+        border: none;
+      }
+  
+      .menuCont1_img {
+        width: 24px; /* Ajusta el tamaño de la imagen */
+        height: 24px;
+      }
+  
+      .menuCont1_title {
+        font-size: 18px;
+        font-weight: bold;
+      }
     }
-    .menuCont2 {}
-}
+  
+    /* Contenedor de los botones */
+    .menuCont2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    /* Estilo de cada botón dentro del menú */
+    .menuCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #f0f0f0; /* Fondo del botón */
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 10px 0; /* Separación entre los botones */
+      cursor: pointer;
+      width: 150px; /* Ancho del botón */
+  
+      &:hover {
+        background-color: #e0e0e0; /* Efecto hover */
+      }
+  
+      .menuCard_img {
+        width: 24px; /* Tamaño de las imágenes */
+        height: 24px;
+        margin-bottom: 5px; /* Separación entre la imagen y el texto */
+      }
+  
+      .menuCard_text {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        color: #333;
+      }
+    }
+  }
+  
