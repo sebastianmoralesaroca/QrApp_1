@@ -30,17 +30,50 @@ body {
   height: 100px;
 }
 
-.cont_nav .imgNot {
-  width: 70px;
-  height: 70px;
+.cont_nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background-color: var(--bg-primary);
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  z-index: 100;
 }
-.cont_nav .imgMenu {
-  width: 70px;
-  height: 70px;
+.cont_nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease-in-out;
 }
-.cont_nav .imgShop {
-  width: 70px;
-  height: 70px;
+.cont_nav button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.cont_nav button img {
+  width: 28px;
+  height: 28px;
+}
+.cont_nav.dark-mode {
+  background-color: var(--bg-secondary);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #222222;
+}
+
+body.dark-mode {
+  --bg-primary: #222222;
+  --bg-secondary: #ffffff;
 }
 
 .card_item {
@@ -58,70 +91,6 @@ body {
   width: 50px;
   height: 50px;
 }
-/* Contenedor principal del menú */
-.menuContPrin {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  /* Estilos para la parte superior del menú (con el botón de cerrar y título) */
-  /* Contenedor de los botones */
-  /* Estilo de cada botón dentro del menú */
-}
-.menuContPrin .menuCont1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
-}
-.menuContPrin .menuCont1 .menuCont1_btn {
-  background: none;
-  border: none;
-}
-.menuContPrin .menuCont1 .menuCont1_img {
-  width: 24px; /* Ajusta el tamaño de la imagen */
-  height: 24px;
-}
-.menuContPrin .menuCont1 .menuCont1_title {
-  font-size: 18px;
-  font-weight: bold;
-}
-.menuContPrin .menuCont2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.menuContPrin .menuCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0; /* Fondo del botón */
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 10px 0; /* Separación entre los botones */
-  cursor: pointer;
-  width: 150px; /* Ancho del botón */
-}
-.menuContPrin .menuCard:hover {
-  background-color: #e0e0e0; /* Efecto hover */
-}
-.menuContPrin .menuCard .menuCard_img {
-  width: 24px; /* Tamaño de las imágenes */
-  height: 24px;
-  margin-bottom: 5px; /* Separación entre la imagen y el texto */
-}
-.menuContPrin .menuCard .menuCard_text {
-  font-size: 14px;
-  font-weight: 500;
-  text-align: center;
-  color: #333;
-}
-
 .NotiCard_cont {
   display: flex;
   flex-direction: column;
