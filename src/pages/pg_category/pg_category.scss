@@ -1,0 +1,67 @@
+.categoryMain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Para que las tarjetas se ajusten dependiendo del tamaño de la pantalla */
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .categoryMain .cateCard {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    /* Efecto de hover */
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  
+    .cateCard_img {
+      width: 100%;
+      height: 200px; /* Altura fija para la imagen */
+      object-fit: cover; /* Para que la imagen se ajuste bien dentro del contenedor */
+    }
+  
+    .cateCard_info {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  
+      .cateCard_name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+  
+      .cateCard_subname {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 20px;
+      }
+  
+      .cateCard_link {
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        font-size: 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+  
+        /* Efecto de hover para el enlace */
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  

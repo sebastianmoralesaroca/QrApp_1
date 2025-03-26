@@ -1,47 +1,29 @@
-.NotiCard_cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.NotiCard_contTitle {
-  color: white;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.NotiCard_contText {
-  color: white;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
+@charset "UTF-8";
 .noti_contPrin {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding: 20px;
-  background-color: #222;
+  position: fixed; /* Fijar la posición */
+  top: 50%; /* Centrar verticalmente */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, -50%); /* Ajuste para el centrado exacto */
+  z-index: 9999; /* Asegura que esté por encima del resto del contenido */
+  width: 90%; /* Ancho del componente, ajusta según sea necesario */
+  max-width: 600px; /* Máximo ancho, puedes ajustarlo */
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para darle profundidad */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-sizing: border-box; /* Incluye el padding dentro del ancho total */
 }
 
 .noti_cont1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
 }
 
 .noti_cont1Btn {
-  background: transparent;
+  background: none;
   border: none;
   cursor: pointer;
 }
@@ -52,14 +34,31 @@
 }
 
 .noti_cont1Title {
-  color: white;
-  font-size: 2rem;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .noti_cont2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  padding-top: 20px;
+}
+
+.NotiCard_cont {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  background-size: cover;
+  background-position: center;
+  color: #333;
+}
+
+.NotiCard_contTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.NotiCard_contText {
+  font-size: 14px;
+  color: #666;
 }/*# sourceMappingURL=comp_noti.css.map */

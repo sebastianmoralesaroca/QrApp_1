@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { icon_cancel } from '../../assets/icon_interface';
 import { Noti1, Noti2 } from '../../assets/ass_notification';
 
-function Comp_Noti({toggleNotification}) {
+function Comp_Noti({ closeNoti }) {
   // Componente NotiCard definido dentro de Comp_Noti
   function Comp_NotiCard({ title, text, fondo }) {
     const background = {
@@ -20,7 +20,7 @@ function Comp_Noti({toggleNotification}) {
   return (
     <div className='noti_contPrin'>
       <div className='noti_cont1'>
-        <button className='noti_cont1Btn' onClick={toggleNotification}>
+        <button className='noti_cont1Btn' onClick={closeNoti}>  {/* Usar closeNoti en vez de toggleNotification */}
           <img className='noti_cont1Img' src={icon_cancel} alt='Cerrar notificación' />
         </button>
         <h3 className='noti_cont1Title'>Notificaciones</h3>

@@ -26,16 +26,16 @@ function Comp_Nav() {
         <button className='btnNot' onClick={toggleNotification}>
           <img className='imgNot' src={icon_notification} alt="notification" />
         </button>
-        <button className='btnShop' onClick={toggleShopCart}>  {/* Botón para mostrar el carrito */}
+        <button className='btnShop' onClick={toggleShopCart}>
           <img className='imgShop' src={icon_shop} alt="shop" />
         </button>
       </nav>
 
       {/* Mostrar el componente de notificación */}
-      {showNoti && <Comp_Noti closeNoti={toggleNotification} />}
+      {showNoti && <Comp_Noti closeNoti={toggleNotification} />}  {/* Pasar 'toggleNotification' como 'closeNoti' */}
 
       {/* Mostrar el componente del carrito de compras */}
-      {showShopCart && <Comp_ShoppCart closeShopCart={toggleShopCart} />}  {/* Pasamos la función para cerrar el carrito */}
+      {showShopCart && <Comp_ShoppCart closeShopCart={toggleShopCart} />}
     </>
   );
 }
